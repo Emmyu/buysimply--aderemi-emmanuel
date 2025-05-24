@@ -36,7 +36,7 @@ buysimply/
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/YOUR_USERNAME/buysimply.git
+[git clone https://github.com/YOUR_USERNAME/buysimply.git](https://github.com/Emmyu/buysimply--aderemi-emmanuel.git)
 cd buysimply
 ````
 
