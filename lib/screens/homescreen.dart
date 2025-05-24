@@ -7,7 +7,6 @@ void main() {
   ));
 }
 
-// ✅ Simulated User Model
 class UserData {
   final String name;
   final int age;
@@ -24,7 +23,7 @@ class UserData {
   });
 }
 
-// ✅ Simulate API delay
+
 Future<UserData> fetchUserData() async {
   await Future.delayed(const Duration(seconds: 2));
   return UserData(
@@ -82,43 +81,55 @@ class StrollBonfireScreen extends StatelessWidget {
                 ),
               ),
 
-              SafeArea(
+                SafeArea(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15.0),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const SizedBox(height: 12),
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const SizedBox(height: 12),
 
-                      // Title
-                      Padding(
-                        padding: const EdgeInsets.only(top: 14.0, left: 75.0, right: 15.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              "Stroll Bonfire",
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 36,
-                                fontWeight: FontWeight.w800,
-                                height: 1.1,
-                                letterSpacing: 1.2,
-                                color: const Color(0xFFD1C4FF),
-                                shadows: [
-                                  Shadow(
-                                    color: Colors.black.withAlpha((0.25 * 255).toInt()),
-                                    offset: const Offset(0, 2),
-                                    blurRadius: 6,
-                                  ),
-                                ],
-                              ),
+                    // Title with image beside text
+                    Padding(
+                    padding: const EdgeInsets.only(top: 14.0, left: 75.0, right: 15.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                      Row(
+                        children: [
+                        Text(
+                          "Stroll Bonfire",
+                          style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 36,
+                          fontWeight: FontWeight.w800,
+                          height: 1.1,
+                          letterSpacing: 1.2,
+                          color: const Color(0xFFD1C4FF),
+                          shadows: [
+                            Shadow(
+                            color: Colors.black.withAlpha((0.25 * 255).toInt()),
+                            offset: const Offset(0, 2),
+                            blurRadius: 6,
                             ),
                           ],
+                          ),
                         ),
+                        const SizedBox(width: 10),
+                        // Add your vector/image here
+                        Image.asset(
+                          'assets/images/Vector.png',
+                          width: 15,
+                          height: 15,
+                          fit: BoxFit.contain,
+                        ),
+                        ],
                       ),
+                      ],
+                    ),
+                    ),
 
-                      const SizedBox(height: 0.1),
+                    const SizedBox(height: 0.1),
 
                       // Room / Timer UI
                       Container(

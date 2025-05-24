@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/stroll_bonfire_screen.dart';
+import 'screens/homescreen.dart';
 
 void main() {
   runApp(const MyApp());
