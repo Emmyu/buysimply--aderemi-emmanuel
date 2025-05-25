@@ -58,7 +58,7 @@ flutter run
 
 ## 🔄 Simulated API with FutureBuilder
 
-To simulate fetching data from an API, `FutureBuilder` is used in `stroll_bonfire_screen.dart`:
+To simulate fetching data from an API, `FutureBuilder` is used in `homescreen.dart`:
 
 ```dart
 Future<UserData> fetchUserData() async {
