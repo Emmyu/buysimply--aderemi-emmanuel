@@ -318,7 +318,7 @@ class StrollBonfireScreen extends StatelessWidget {
                 letterSpacing: 0,
                 color: Colors.white,
               ),
-              maxLines: 2,
+                maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
           ),
